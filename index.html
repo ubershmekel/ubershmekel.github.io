@@ -33,11 +33,14 @@
           } catch(err) {}
         </script>
 
+        <h2>Recent Activity</h2>
         <div id="lifestream">&nbsp;</div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script src="//rawgithub.com/christianvuerings/jquery-lifestream/master/jquery.lifestream.min.js"></script>
+        <link href="css/lifestream.css" rel="stylesheet" type="text/css">
         <script>
           $("#lifestream").lifestream({
+            limit: 200,
             list:[
               {
                 service: "github",
